@@ -33,3 +33,18 @@
     }
     
     fullName()
+
+    // Q2
+    let firstName;
+    let lastName;
+    let age;
+    let listOfSubjects;
+    let address = {
+        streetName:'Robin',
+        streetNumber:'10',
+        suburb:'Eersteriver',
+        city:'cape Town',
+        country:'south africa'
+    }
+
+    console.log(firstName,lastName,age,listOfSubjects,address)
