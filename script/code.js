@@ -35,10 +35,10 @@
     fullName()
 
     // Q2
-    let firstName;
-    let lastName;
-    let age;
-    let listOfSubjects;
+    let firstName = "Eighton-Lee";
+    let lastName = "Paulse";
+    let age = 18;
+    let listOfSubjects = ['Mathematical Literacy', 'English Home Language', 'Afrikaans First Additional Language', 'Life Orientation', 'Computer Applications Technology', 'Business Studies', 'Life Sciences'];
     let address = {
         streetName:'Robin',
         streetNumber:'10',
@@ -47,4 +47,24 @@
         country:'south africa'
     }
 
-    console.log(firstName,lastName,age,listOfSubjects,address)
+    console.log(`My name is  ${firstName} My surname is  ${lastName} I am  ${age} years old , and in school I had ${listOfSubjects} And I live at ${[address]}`)
+
+    // Q3
+
+    const firstValue = document.querySelector('#value1')
+    const operator = document.querySelector('#value2')
+    const secondValue = document.querySelector('#value3')
+    const calcButton = document.querySelector('#calculate')
+    const finalHeading = document.querySelector('#value')
+
+    calcButton.addEventListener('click',()=>{
+
+        let method = eval(firstValue.value + operator.value + secondValue.value)
+        if(firstValue.value,secondValue.value,operator.value,finalHeading == ''){
+            firstValue.value,secondValue.value,operator.value,finalHeading === ''
+        }else{
+            finalHeading.innerHTML = Number(method)
+            console.log(method)
+            console.log([method])
+        }
+    })
